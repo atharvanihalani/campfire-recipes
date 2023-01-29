@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer> </script>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="/scripts/index.js" defer> </script>
     <title>Campfire Food</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
     <br>
     <p>What ingredients do you have!</p>
 
-    <form action="scripts/search-page.js" method="POST">
+    <form action="search-page.html" method="GET">
         <label for="food-select-1">Item 1</label>
         <select name="food-1" id="food-select-1">
             <option value="">None</option>
@@ -40,9 +40,7 @@
                 <option value="chips">Chips</option>
             </optgroup>
         </select>
-    </form>
-
-    <form action="scripts/search-page.js" method="POST">
+        
         <label for="food-select-2">Item 2</label>
         <select name="food-2" id="food-select-2">
             <option value="">None</option>
@@ -69,9 +67,7 @@
                 <option value="chips">Chips</option>
             </optgroup>
         </select>
-    </form>
 
-    <form action="scripts/search-page.js" method="POST">
         <label for="food-select-3">Item 3</label>
         <select name="food-3" id="food-select-3">
             <option value="">None</option>
@@ -98,9 +94,10 @@
                 <option value="chips">Chips</option>
             </optgroup>
         </select>
+
+        <button type="submit">Search</button>
     </form>
     
-    <button type="button">Search</button>
 
     
   </body>
