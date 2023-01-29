@@ -21,13 +21,36 @@ def searchpage(request: HttpRequest):
     food3 = request.GET['food-3']
     recipes = [{
         "ingredients": ["chicken","bell peppers"],
-        "filename": "recipes/template.html",
+        "filename": "recipes/chicken-fajitas.html",
         "name": "Grilled Chicken Fajitas"
     }, {
-        "ingredients": ["asparagus"],
-        "filename": "recipes/raw_asparagus.html",
-        "name": "Just asparagus"
-    }]
+        "ingredients": ["shrimp", "corn", "potatoes"],
+        "filename": "recipes/baked-shrimp.html",
+        "name": "Baked Shrimp"
+    }, {
+        "ingredients": ["chicken", "potatoes"],
+        "filename": "recipes/lemon-chicken-potatoes.html",
+        "name": "Lemon Chicken Potatoes"
+    }, {
+        "ingredients": ["asparagus", "sausage"],
+        "filename": "recipes/garlic-sausage-asparagus.html",
+        "name": "Garlic Sausage and Asparagus"
+    }, {
+        "ingredients": ["shrimp", "corn"],
+        "filename": "recipes/shrimp-corn-boil.html",
+        "name": "Shrimp Corn Boil"
+    }, {
+        "ingredients": ["cookies", "smores"],
+        "filename": "recipes/tower-of-smores.html",
+        "name": "Tower of Smores"
+    }, {
+        "ingredients": ["potatoes"],
+        "filename": "recipes/sweet-potato-tacos.html",
+        "name": "Sweet Potato Tacos"
+    }
+    
+    
+    ]
     search_results = [
         (compute_score(recipe, [food1, food2, food3]), recipe)
         for recipe 

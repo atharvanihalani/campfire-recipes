@@ -1,11 +1,50 @@
 h1 {
     text-align: center;
+    border:2px solid whitesmoke;
+    color:navajowhite;
+
+}
+
+.blocks {
+    background-color:black;
+    padding:25px;
+  
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+h5,
+li,
+h4 {
+    text-align: center;
 }
 
 h4 {
-    color: slategray;
+    color:goldenrod;
 }
 
+h2 {
+    color:navajowhite;
+}
+
+body {
+    background-image: url('../images/wallpaper.jpg');
+    background-size: 100% 100%;
+}
+
+img {
+    height: auto;
+    max-width:100%;
+}  
+
 html {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
+    color:antiquewhite;
 }
